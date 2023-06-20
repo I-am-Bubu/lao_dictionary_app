@@ -17,37 +17,7 @@ class _homePageState extends State<homePage> {
   Widget build(BuildContext context) {
     return Scaffold(
      
-      appBar: AppBar(
-        toolbarHeight: 70,
-        backgroundColor: Theme.of(context).primaryColor,
-        flexibleSpace: Center(
-          child: Padding(
-            padding: const EdgeInsets.only(top: 45),
-            child: Container(
-              width: 300,
-              height: 40,
-              child: TextField(
-                decoration: InputDecoration(
-                  hintText: 'Search',
-                  filled: true,
-                  fillColor: Colors.white,
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                    borderSide: BorderSide.none,
-                  ),
-                  contentPadding: EdgeInsets.all(10),
-                ),
-              ),
-            ),
-          ),
-        ),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.search),
-            onPressed: () {},
-          ),
-        ],
-      ),
+      
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
