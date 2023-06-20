@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 
-class horizontalListviewWidget extends StatelessWidget {
+class secondVerbsWidget extends StatelessWidget {
   final List<String> items = [
-    
-    
+    'ຫງ',
+    'ຫຍ',
+    'ໝ',
+    'ໜ',
+    'ຫຼ',
+    'ຫວ',
   ];
 
   @override
@@ -19,25 +23,19 @@ class horizontalListviewWidget extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    child: Text('ພະຍັນຊະນະເຄົ້າ'),
-                  )
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: 110,
+                    width: 90,
+                    height: 90,
                     margin: EdgeInsets.all(5),
                     decoration: BoxDecoration(
                       color: Color.fromRGBO(138, 148, 225, 1.0),
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(10),
                     ),
                     child: Center(
                       child: Text(
                         items[index],
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 50,
+                          fontSize: 30,
                           fontWeight: FontWeight.bold,
                         ),
                       ),

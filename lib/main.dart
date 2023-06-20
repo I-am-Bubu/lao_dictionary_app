@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:lao_dictionary_app/pages/start_page.dart';
-
 void main() {
   runApp(const MyApp());
 }

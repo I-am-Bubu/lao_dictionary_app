@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:lao_dictionary_app/pages/home_page.dart';
+import 'package:lao_dictionary_app/pages/main_page.dart';
 
 class startPage extends StatefulWidget {
   const startPage({super.key});
@@ -81,7 +81,7 @@ class _startPageState extends State<startPage> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => homePage()),
+                      MaterialPageRoute(builder: (context) => mainPage()),
                     );
                   },
                 ),
