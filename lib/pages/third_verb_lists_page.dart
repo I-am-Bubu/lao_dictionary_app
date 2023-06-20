@@ -18,7 +18,7 @@ class thirdVerbListsPage extends StatelessWidget {
         backgroundColor: Theme.of(context).primaryColor,
         automaticallyImplyLeading: false,
         title: Text(
-          'ພະຍັນຊະນະເຄົ້າ',
+          'ພະຍັນຊະນະຄວບ',
           style: TextStyle(
               fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
         ),

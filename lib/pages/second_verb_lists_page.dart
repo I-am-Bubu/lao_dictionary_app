@@ -18,7 +18,7 @@ class secondVerbListsPage extends StatelessWidget {
         backgroundColor: Theme.of(context).primaryColor,
         automaticallyImplyLeading: false,
         title: Text(
-          'ພະຍັນຊະນະເຄົ້າ',
+          'ພະຍັນຊະນະປະສົມ',
           style: TextStyle(
               fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
         ),
