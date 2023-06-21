@@ -16,7 +16,6 @@ class secondVerbListsPage extends StatelessWidget {
       appBar: AppBar(
         toolbarHeight: 50,
         backgroundColor: Theme.of(context).primaryColor,
-        automaticallyImplyLeading: false,
         title: Text(
           'ພະຍັນຊະນະປະສົມ',
           style: TextStyle(

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:lao_dictionary_app/pages/first_verb_lsits_page.dart';
+import 'package:lao_dictionary_app/pages/second_verb_lists_page.dart';
+import 'package:lao_dictionary_app/pages/third_verb_lists_page.dart';
 
 import 'package:lao_dictionary_app/widgets/carousel_widget.dart';
 import 'package:lao_dictionary_app/widgets/first_verbs_widget.dart';
@@ -16,8 +19,37 @@ class _homePageState extends State<homePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     
-      
+      appBar: AppBar(
+        toolbarHeight: 70,
+        backgroundColor: Theme.of(context).primaryColor,
+        flexibleSpace: Center(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 45),
+            child: Container(
+              width: 300,
+              height: 40,
+              child: TextField(
+                decoration: InputDecoration(
+                  hintText: 'ຄົ້ນຫາ...',
+                  filled: true,
+                  fillColor: Colors.white,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: BorderSide.none,
+                  ),
+                  contentPadding: EdgeInsets.only(left: 20),
+                ),
+              ),
+            ),
+          ),
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () {},
+          ),
+        ],
+      ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
@@ -39,7 +71,14 @@ class _homePageState extends State<homePage> {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => firstVerbListsPage(),
+                      ),
+                    );
+                  },
                   child: Text("ເບິ່ງທັງໝົດ >>"),
                   style: ButtonStyle(
                     backgroundColor:
@@ -70,7 +109,14 @@ class _homePageState extends State<homePage> {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => secondVerbListsPage(),
+                      ),
+                    );
+                  },
                   child: Text("ເບິ່ງທັງໝົດ >>"),
                   style: ButtonStyle(
                     backgroundColor:
@@ -101,7 +147,14 @@ class _homePageState extends State<homePage> {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => thirdVerbListsPage(),
+                      ),
+                    );
+                  },
                   child: Text("ເບິ່ງທັງໝົດ >>"),
                   style: ButtonStyle(
                     backgroundColor:
