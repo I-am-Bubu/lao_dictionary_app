@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lao_dictionary_app/pages/list_of_verbs.dart';
 
 class firstVerbListsPage extends StatelessWidget {
   final List<String> items = [
@@ -50,7 +51,10 @@ class firstVerbListsPage extends StatelessWidget {
         children: List.generate(items.length, (index) {
           return GestureDetector(
             onTap: () {
-              print('Tapped');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => listOfVerbsPage()),
+              );
             },
             child: Container(
               width: 90,

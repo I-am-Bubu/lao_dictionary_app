@@ -1,7 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
-
 class profilePage extends StatelessWidget {
   final List<Map<String, dynamic>> items = [
     {
@@ -10,10 +9,26 @@ class profilePage extends StatelessWidget {
       'class': '4COM1',
       'facbookLink': 'https://www.facebook.com/thipthidar.korsarnonh/',
       'image':
-          'https://scontent.fvte2-1.fna.fbcdn.net/v/t39.30808-6/234512202_947075819183186_5204174017473197798_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeE9IcH1dc5P8jrtEB1vIHm36g-91Qa7WpHqD73VBrtakd-u6RQUbUGHmiMDUqvHhAMsbqDBTvSDyGlKOKF17sS7&_nc_ohc=AWJabnKcKm4AX8Mw09S&_nc_ht=scontent.fvte2-1.fna&oh=00_AfBRAcbxzygT2acZAuB3xw740a5dxo8PaulP6vn1oqBjTA&oe=6497AEF4'
+          'https://firebasestorage.googleapis.com/v0/b/saengthong-clinic.appspot.com/o/Screenshot%202023-06-22%20at%202.51.28%20PM.png?alt=media&token=0ed1385a-ec7c-442d-9c04-897f3a5fd183'
     },
     {
-      'name': 'ນາງ ທິບທິດາ ກໍຊານົນ',
+      'name': 'ນາງ ພຸດທະສອນ ເພັງມີໄຊ',
+      'role': 'Analytics',
+      'class': '4COM1',
+      'facbookLink': 'https://www.facebook.com/thipthidar.korsarnonh/',
+      'image':
+          'https://firebasestorage.googleapis.com/v0/b/saengthong-clinic.appspot.com/o/Screenshot%202023-06-29%20at%204.10.57%20PM.png?alt=media&token=5e885c97-b3e2-4c25-ab40-818578086705'
+    },
+    {
+      'name': 'ນາງ ໄມຄຳ ສີວົງສານ',
+      'role': 'Do Presentation',
+      'class': '4COM1',
+      'facbookLink': 'https://www.facebook.com/thipthidar.korsarnonh/',
+      'image':
+          'https://firebasestorage.googleapis.com/v0/b/saengthong-clinic.appspot.com/o/mai.jpg?alt=media&token=f15381f8-5cf5-4341-9a23-2e5445fa5a13'
+    },
+    {
+      'name': 'ທ້າວ ໄພລັດ ລັດດາວັນ',
       'role': 'Design&Coding',
       'class': '4COM1',
       'facbookLink': 'https://www.facebook.com/thipthidar.korsarnonh/',
@@ -21,23 +36,7 @@ class profilePage extends StatelessWidget {
           'https://scontent.fvte2-3.fna.fbcdn.net/v/t1.6435-9/140182083_830252734198829_8613756720835514898_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE28c4gPcEYjtQqG38c4juvFEjoTC_r9MoUSOhML-v0yvuZwcPgr-RKhl9uoN-AwVIV1CTuWDOO4POo3TcfU65p&_nc_ohc=MAHk4YcX8dcAX-up65_&_nc_oc=AQmasRZ4diHa2fxnkuHk0j6jDroYLOJrpeJihBReZa3TBUqA8r-clsv_RiHjvBwztTE&_nc_ht=scontent.fvte2-3.fna&oh=00_AfBNUkRw2PrPIrbvmGvx0mb-_ppzCPtkf1Wh4Bi7n3mo_A&oe=64B9FBF1'
     },
     {
-      'name': 'ນາງ ທິບທິດາ ກໍຊານົນ',
-      'role': 'Design&Coding',
-      'class': '4COM1',
-      'facbookLink': 'https://www.facebook.com/thipthidar.korsarnonh/',
-      'image':
-          'https://scontent.fvte2-3.fna.fbcdn.net/v/t1.6435-9/140182083_830252734198829_8613756720835514898_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE28c4gPcEYjtQqG38c4juvFEjoTC_r9MoUSOhML-v0yvuZwcPgr-RKhl9uoN-AwVIV1CTuWDOO4POo3TcfU65p&_nc_ohc=MAHk4YcX8dcAX-up65_&_nc_oc=AQmasRZ4diHa2fxnkuHk0j6jDroYLOJrpeJihBReZa3TBUqA8r-clsv_RiHjvBwztTE&_nc_ht=scontent.fvte2-3.fna&oh=00_AfBNUkRw2PrPIrbvmGvx0mb-_ppzCPtkf1Wh4Bi7n3mo_A&oe=64B9FBF1'
-    },
-    {
-      'name': 'ນາງ ທິບທິດາ ກໍຊານົນ',
-      'role': 'Design&Coding',
-      'class': '4COM1',
-      'facbookLink': 'https://www.facebook.com/thipthidar.korsarnonh/',
-      'image':
-          'https://scontent.fvte2-3.fna.fbcdn.net/v/t1.6435-9/140182083_830252734198829_8613756720835514898_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE28c4gPcEYjtQqG38c4juvFEjoTC_r9MoUSOhML-v0yvuZwcPgr-RKhl9uoN-AwVIV1CTuWDOO4POo3TcfU65p&_nc_ohc=MAHk4YcX8dcAX-up65_&_nc_oc=AQmasRZ4diHa2fxnkuHk0j6jDroYLOJrpeJihBReZa3TBUqA8r-clsv_RiHjvBwztTE&_nc_ht=scontent.fvte2-3.fna&oh=00_AfBNUkRw2PrPIrbvmGvx0mb-_ppzCPtkf1Wh4Bi7n3mo_A&oe=64B9FBF1'
-    },
-    {
-      'name': 'ນາງ ທິບທິດາ ກໍຊານົນ',
+      'name': 'ທ້າວ ນິກທະວົງ',
       'role': 'Design&Coding',
       'class': '4COM1',
       'facbookLink': 'https://www.facebook.com/thipthidar.korsarnonh/',
@@ -133,9 +132,7 @@ class profilePage extends StatelessWidget {
                               Icons.facebook,
                               color: Colors.white,
                             ),
-                            onPressed: () {
-                              
-                            },
+                            onPressed: () {},
                           )
                         ],
                       ),
