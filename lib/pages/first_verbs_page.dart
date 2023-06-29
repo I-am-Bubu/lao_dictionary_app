@@ -1,19 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lao_dictionary_app/pages/list_of_first_verb.dart';
-
-class Verbs {
-  final String title;
-  final List<ListOfVerb> subItems;
-
-  Verbs({required this.title, required this.subItems});
-}
-
-class ListOfVerb {
-  final String subtitle;
-  final String details;
-
-  ListOfVerb({required this.subtitle, required this.details});
-}
+import 'package:lao_dictionary_app/pages/list_verb.dart';
+import 'package:lao_dictionary_app/widgets/verbs.dart';
 
 class firstVerbsPage extends StatelessWidget {
   final List<Verbs> itemList = [
@@ -24,7 +11,14 @@ class firstVerbsPage extends StatelessWidget {
             subtitle: "ກ",
             details:
                 "ພະຍັນຊະນະຕົວທຳອິດ ເອີ້ນວ່າຕົວກໍ, ຖືກຈັດໄວ້ໃນໝວດອັກສອນກາງ ແລະ ໃຊ້ເປັນຕົວສະກົດໄດ້ເຊັ່ນ: ມັກ, ປາກ, ໂລກ..."),
-        ListOfVerb(subtitle: "ກະ", details: "Details for SubItem 1.2"),
+        ListOfVerb(
+            subtitle: "ກະ",
+            details:
+                "1. ຄາດໝາຍ, ຄະເນ, ນັບຢູ່ໃນໃຈ ເຊັ່ນ: ກະວ່າດິນຕອນນີ້ ກວ້າງ ຊາວຕະລາງແມັດ; 2. ຮອຍຈ້ຳດຳໆ ຄືຮອຍມຶກຕາມຜິວໜັງຂອງຜູ້ເຖົ້າ; 3. ພະຍາງໜ້າ ຂອງຫຼາຍໆຄຳໃຊ້ໄວ້ເພື່ອໃຫ້ອອກສຽງສະບາຍເຊັ່ນ: ກະຕ່າ, ກະປູ, ກະປ໋ອງ;"),
+        ListOfVerb(
+            subtitle: "ກະຈະ",
+            details:
+                "ງາມ, ຂາວເດັ່ນ, ແຈ່ມແຈ້ງ, ມັກໃຊ້ປະກອບຄຳວ່າ ຂາວ ເຊັ່ນ: ຝ້າຍຂາວກະຈະເຕັມສວນ."),
       ],
     ),
     Verbs(
@@ -52,37 +46,40 @@ class firstVerbsPage extends StatelessWidget {
         crossAxisCount: 4,
         childAspectRatio: 1,
         padding: EdgeInsets.only(top: 5),
-        children: List.generate(itemList.length, (index) {
-          return GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) =>
-                        listOfFristVerb(subItemList: itemList[index].subItems)),
-              );
-            },
-            child: Container(
-              width: 90,
-              height: 90,
-              margin: EdgeInsets.all(5),
-              decoration: BoxDecoration(
-                color: Color.fromRGBO(138, 148, 225, 1.0),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Center(
-                child: Text(
-                  itemList[index].title,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
+        children: List.generate(
+          itemList.length,
+          (index) {
+            return GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => listOfFristVerb(
+                          subItemList: itemList[index].subItems)),
+                );
+              },
+              child: Container(
+                width: 90,
+                height: 90,
+                margin: EdgeInsets.all(5),
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(138, 148, 225, 1.0),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Center(
+                  child: Text(
+                    itemList[index].title,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
-            ),
-          );
-        }),
+            );
+          },
+        ),
       ),
     );
   }
