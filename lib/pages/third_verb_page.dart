@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class thirdVerbListsPage extends StatelessWidget {
+class thirdVerbsPage extends StatelessWidget {
   final List<String> items = [
     'ກວ',
     'ຂວ',

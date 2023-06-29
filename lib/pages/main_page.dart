@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:lao_dictionary_app/pages/first_verb_lsits_page.dart';
+import 'package:lao_dictionary_app/pages/first_verbs_page.dart';
 import 'package:lao_dictionary_app/pages/home_page.dart';
 import 'package:lao_dictionary_app/pages/profile_page.dart';
-import 'package:lao_dictionary_app/pages/second_verb_lists_page.dart';
-import 'package:lao_dictionary_app/pages/third_verb_lists_page.dart';
+import 'package:lao_dictionary_app/pages/second_verbs_page.dart';
+import 'package:lao_dictionary_app/pages/third_verb_page.dart';
 
 class mainPage extends StatefulWidget {
   const mainPage({super.key});
@@ -17,9 +17,9 @@ class _mainPageState extends State<mainPage> {
 
   final List<Widget> _pages = [
     homePage(),
-    firstVerbListsPage(),
-    secondVerbListsPage(),
-    thirdVerbListsPage(),
+    firstVerbsPage(),
+    secondVerbsPage(),
+    thirdVerbsPage(),
     profilePage()
   ];
 

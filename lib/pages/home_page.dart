@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lao_dictionary_app/pages/first_verb_lsits_page.dart';
-import 'package:lao_dictionary_app/pages/second_verb_lists_page.dart';
-import 'package:lao_dictionary_app/pages/third_verb_lists_page.dart';
+import 'package:lao_dictionary_app/pages/first_verbs_page.dart';
+import 'package:lao_dictionary_app/pages/second_verbs_page.dart';
+import 'package:lao_dictionary_app/pages/third_verb_page.dart';
 import 'package:lao_dictionary_app/widgets/carousel/carousel_widget.dart';
 import 'package:lao_dictionary_app/widgets/carousel/first_verbs_carousel.dart';
 import 'package:lao_dictionary_app/widgets/carousel/second_verbs_carousel.dart';
@@ -72,7 +72,7 @@ class _homePageState extends State<homePage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => firstVerbListsPage(),
+                        builder: (context) => firstVerbsPage(),
                       ),
                     );
                   },
@@ -110,7 +110,7 @@ class _homePageState extends State<homePage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => secondVerbListsPage(),
+                        builder: (context) => secondVerbsPage(),
                       ),
                     );
                   },
@@ -148,7 +148,7 @@ class _homePageState extends State<homePage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => thirdVerbListsPage(),
+                        builder: (context) => thirdVerbsPage(),
                       ),
                     );
                   },

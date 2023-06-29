@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lao_dictionary_app/pages/detail_of_first_verb.dart';
-import 'package:lao_dictionary_app/pages/first_verb_lsits_page.dart';
+import 'package:lao_dictionary_app/pages/first_verbs_page.dart';
 
 class listOfFristVerb extends StatelessWidget {
   final List<ListOfVerb> subItemList;

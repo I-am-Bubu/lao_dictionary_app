@@ -15,7 +15,7 @@ class ListOfVerb {
   ListOfVerb({required this.subtitle, required this.details});
 }
 
-class firstVerbListsPage extends StatelessWidget {
+class firstVerbsPage extends StatelessWidget {
   final List<Verbs> itemList = [
     Verbs(
       title: "ກ",
