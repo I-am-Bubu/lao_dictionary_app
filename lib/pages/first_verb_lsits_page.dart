@@ -1,35 +1,39 @@
 import 'package:flutter/material.dart';
-import 'package:lao_dictionary_app/pages/list_of_verbs.dart';
+import 'package:lao_dictionary_app/pages/list_of_first_verb.dart';
+
+class Verbs {
+  final String title;
+  final List<ListOfVerb> subItems;
+
+  Verbs({required this.title, required this.subItems});
+}
+
+class ListOfVerb {
+  final String subtitle;
+  final String details;
+
+  ListOfVerb({required this.subtitle, required this.details});
+}
 
 class firstVerbListsPage extends StatelessWidget {
-  final List<String> items = [
-    'ກ',
-    'ຂ',
-    'ຄ',
-    'ງ',
-    'ຈ',
-    'ສ',
-    'ຊ',
-    'ຍ',
-    'ດ',
-    'ຕ',
-    'ຖ',
-    'ທ',
-    'ນ',
-    'ບ',
-    'ປ',
-    'ຜ',
-    'ຝ',
-    'ພ',
-    'ຟ',
-    'ມ',
-    'ຢ',
-    'ຣ',
-    'ລ',
-    'ວ',
-    'ຫ',
-    'ອ',
-    'ຮ',
+  final List<Verbs> itemList = [
+    Verbs(
+      title: "ກ",
+      subItems: [
+        ListOfVerb(
+            subtitle: "ກ",
+            details:
+                "ພະຍັນຊະນະຕົວທຳອິດ ເອີ້ນວ່າຕົວກໍ, ຖືກຈັດໄວ້ໃນໝວດອັກສອນກາງ ແລະ ໃຊ້ເປັນຕົວສະກົດໄດ້ເຊັ່ນ: ມັກ, ປາກ, ໂລກ..."),
+        ListOfVerb(subtitle: "ກະ", details: "Details for SubItem 1.2"),
+      ],
+    ),
+    Verbs(
+      title: "ຂ",
+      subItems: [
+        ListOfVerb(subtitle: "ຂ", details: "Details for SubItem 2.1"),
+        ListOfVerb(subtitle: "ຂະ", details: "Details for SubItem 2.2"),
+      ],
+    ),
   ];
 
   @override
@@ -48,12 +52,14 @@ class firstVerbListsPage extends StatelessWidget {
         crossAxisCount: 4,
         childAspectRatio: 1,
         padding: EdgeInsets.only(top: 5),
-        children: List.generate(items.length, (index) {
+        children: List.generate(itemList.length, (index) {
           return GestureDetector(
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => listOfVerbsPage()),
+                MaterialPageRoute(
+                    builder: (context) =>
+                        listOfFristVerb(subItemList: itemList[index].subItems)),
               );
             },
             child: Container(
@@ -66,7 +72,7 @@ class firstVerbListsPage extends StatelessWidget {
               ),
               child: Center(
                 child: Text(
-                  items[index],
+                  itemList[index].title,
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 30,

@@ -2,15 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:lao_dictionary_app/pages/first_verb_lsits_page.dart';
 import 'package:lao_dictionary_app/pages/second_verb_lists_page.dart';
 import 'package:lao_dictionary_app/pages/third_verb_lists_page.dart';
-
-import 'package:lao_dictionary_app/widgets/carousel_widget.dart';
-import 'package:lao_dictionary_app/widgets/first_verbs_widget.dart';
-import 'package:lao_dictionary_app/widgets/second_verbs_widget.dart';
-import 'package:lao_dictionary_app/widgets/third_verbs_widget.dart';
+import 'package:lao_dictionary_app/widgets/carousel/carousel_widget.dart';
+import 'package:lao_dictionary_app/widgets/carousel/first_verbs_carousel.dart';
+import 'package:lao_dictionary_app/widgets/carousel/second_verbs_carousel.dart';
+import 'package:lao_dictionary_app/widgets/carousel/third_verbs_carousel.dart';
 
 class homePage extends StatefulWidget {
-  const homePage({super.key});
-
   @override
   State<homePage> createState() => _homePageState();
 }
@@ -93,7 +90,7 @@ class _homePageState extends State<homePage> {
               ],
             ),
             Container(
-              child: firstVerbsWidget(),
+              child: firstVerbsCarousel(),
             ),
             SizedBox(
               height: 5,
@@ -131,7 +128,7 @@ class _homePageState extends State<homePage> {
               ],
             ),
             Container(
-              child: secondVerbsWidget(),
+              child: secondVerbsCarousel(),
             ),
             SizedBox(
               height: 5,
@@ -169,7 +166,7 @@ class _homePageState extends State<homePage> {
               ],
             ),
             Container(
-              child: thirdVerbsWidget(),
+              child: thirdVerbsCarousel(),
             ),
           ],
         ),

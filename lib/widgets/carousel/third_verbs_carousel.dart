@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class thirdVerbsWidget extends StatelessWidget {
+class thirdVerbsCarousel extends StatelessWidget {
   final List<String> items = [
     'ກວ',
     'ຂວ',

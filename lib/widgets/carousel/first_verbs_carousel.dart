@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class firstVerbsWidget extends StatelessWidget {
+class firstVerbsCarousel extends StatelessWidget {
   final List<String> items = [
     'ກ',
     'ຂ',
