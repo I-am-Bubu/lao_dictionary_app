@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lao_dictionary_app/pages/list_verb.dart';
-import 'package:lao_dictionary_app/widgets/verbs.dart';
+import 'package:lao_dictionary_app/verbs.dart';
 
 class firstVerbsPage extends StatelessWidget {
   final List<Verbs> itemList = [

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lao_dictionary_app/widgets/verbs.dart';
+import 'package:lao_dictionary_app/verbs.dart';
 import '../../pages/list_verb.dart';
 
 class thirdVerbsCarousel extends StatelessWidget {
