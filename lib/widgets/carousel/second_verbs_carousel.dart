@@ -1,36 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:lao_dictionary_app/verbs.dart';
+import 'package:lao_dictionary_app/first_verb.dart';
 import '../../pages/list_verb.dart';
 
 class secondVerbsCarousel extends StatelessWidget {
-  final List<Verbs> itemList = [
-    Verbs(
-      title: "ກ",
-      subItems: [
-        ListOfVerb(
-            subtitle: "ກ",
-            details:
-                "ພະຍັນຊະນະຕົວທຳອິດ ເອີ້ນວ່າຕົວກໍ, ຖືກຈັດໄວ້ໃນໝວດອັກສອນກາງ ແລະ ໃຊ້ເປັນຕົວສະກົດໄດ້ເຊັ່ນ: ມັກ, ປາກ, ໂລກ..."),
-        ListOfVerb(subtitle: "ກະ", details: "Details for SubItem 1.2"),
-      ],
-    ),
-    Verbs(
-      title: "ຂ",
-      subItems: [
-        ListOfVerb(subtitle: "ຂ", details: "Details for SubItem 2.1"),
-        ListOfVerb(subtitle: "ຂະ", details: "Details for SubItem 2.2"),
-      ],
-    ),
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 110,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: itemList.length,
+        itemCount: itemListFirstVerbs.length,
         itemBuilder: (context, index) {
+          final item = itemListFirstVerbs[index];
           return Column(
             children: [
               Row(children: [
@@ -40,7 +21,7 @@ class secondVerbsCarousel extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => listOfFristVerb(
-                            subItemList: itemList[index].subItems),
+                            subItemList: item.subItems),
                       ),
                     );
                   },
@@ -54,7 +35,7 @@ class secondVerbsCarousel extends StatelessWidget {
                     ),
                     child: Center(
                       child: Text(
-                        itemList[index].title,
+                        item.title,
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 30,

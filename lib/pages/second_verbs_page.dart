@@ -1,28 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lao_dictionary_app/pages/list_verb.dart';
-import 'package:lao_dictionary_app/verbs.dart';
+import '../first_verb.dart';
 
 class secondVerbsPage extends StatelessWidget {
-  final List<Verbs> itemList = [
-    Verbs(
-      title: "ຫງ",
-      subItems: [
-        ListOfVerb(
-            subtitle: "ກ",
-            details:
-                "ພະຍັນຊະນະຕົວທຳອິດ ເອີ້ນວ່າຕົວກໍ, ຖືກຈັດໄວ້ໃນໝວດອັກສອນກາງ ແລະ ໃຊ້ເປັນຕົວສະກົດໄດ້ເຊັ່ນ: ມັກ, ປາກ, ໂລກ..."),
-        ListOfVerb(subtitle: "ກະ", details: "Details for SubItem 1.2"),
-      ],
-    ),
-    Verbs(
-      title: "ຫຍ",
-      subItems: [
-        ListOfVerb(subtitle: "ຂ", details: "Details for SubItem 2.1"),
-        ListOfVerb(subtitle: "ຂະ", details: "Details for SubItem 2.2"),
-      ],
-    ),
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +10,7 @@ class secondVerbsPage extends StatelessWidget {
         toolbarHeight: 50,
         backgroundColor: Theme.of(context).primaryColor,
         title: Text(
-          'ພະຍັນຊະນະເຄົ້າ',
+          'ພະຍັນຊະນະປະສົມ',
           style: TextStyle(
               fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
         ),
@@ -40,15 +20,16 @@ class secondVerbsPage extends StatelessWidget {
         childAspectRatio: 1,
         padding: EdgeInsets.only(top: 5),
         children: List.generate(
-          itemList.length,
+          itemListFirstVerbs.length,
           (index) {
+            final item = itemListFirstVerbs[index];
             return GestureDetector(
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => listOfFristVerb(
-                          subItemList: itemList[index].subItems)),
+                      builder: (context) =>
+                          listOfFristVerb(subItemList: item.subItems)),
                 );
               },
               child: Container(
@@ -61,7 +42,7 @@ class secondVerbsPage extends StatelessWidget {
                 ),
                 child: Center(
                   child: Text(
-                    itemList[index].title,
+                    item.title,
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 30,

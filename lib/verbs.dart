@@ -6,8 +6,10 @@ class Verbs {
 }
 
 class ListOfVerb {
+  final String title;
   final String subtitle;
   final String details;
 
-  ListOfVerb({required this.subtitle, required this.details});
+  ListOfVerb(
+      {required this.subtitle, required this.details, required this.title});
 }
