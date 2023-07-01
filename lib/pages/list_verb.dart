@@ -69,7 +69,7 @@ class listOfFristVerb extends StatelessWidget {
                       children: [
                         Center(
                           child: Padding(
-                            padding: const EdgeInsets.only(left: 15),
+                            padding: const EdgeInsets.only(left: 10),
                             child: Text(
                               subItemList[index].title,
                               style: TextStyle(
