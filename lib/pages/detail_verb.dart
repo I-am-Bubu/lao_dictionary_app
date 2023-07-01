@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lao_dictionary_app/verbs.dart';
 
-
 class detailOfFirstVerb extends StatelessWidget {
   final ListOfVerb subItem;
 
@@ -64,7 +63,7 @@ class detailOfFirstVerb extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.only(left: 20),
                               child: Text(
-                                subItem.subtitle,
+                                subItem.title,
                                 style: TextStyle(
                                     fontSize: 40,
                                     fontWeight: FontWeight.bold,
@@ -94,7 +93,13 @@ class detailOfFirstVerb extends StatelessWidget {
                             child: Text(
                               subItem.details,
                               style: TextStyle(
-                                  color: Color.fromARGB(255, 80, 80, 80)),
+                                  fontSize: 18,
+                                  color: Color.fromARGB(
+                                    255,
+                                    80,
+                                    80,
+                                    80,
+                                  )),
                             ),
                           ),
                         ),

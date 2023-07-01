@@ -5,7 +5,7 @@ class profilePage extends StatelessWidget {
   final List<Map<String, dynamic>> items = [
     {
       'name': 'ນາງ ທິບທິດາ ກໍຊານົນ',
-      'role': 'Design&Coding',
+      'role': 'ອອກແບບ&ຂຽນໂຄດ',
       'class': '4COM1',
       'facbookLink': 'https://www.facebook.com/thipthidar.korsarnonh/',
       'image':
@@ -13,7 +13,7 @@ class profilePage extends StatelessWidget {
     },
     {
       'name': 'ນາງ ພຸດທະສອນ ເພັງມີໄຊ',
-      'role': 'Analytics',
+      'role': 'ຂຽນຄອນເທັນ',
       'class': '4COM1',
       'facbookLink': 'https://www.facebook.com/thipthidar.korsarnonh/',
       'image':
@@ -21,7 +21,7 @@ class profilePage extends StatelessWidget {
     },
     {
       'name': 'ນາງ ໄມຄຳ ສີວົງສານ',
-      'role': 'Do Presentation',
+      'role': 'ເຮັດສະໄລ້ພຣີເຊັ້ນ',
       'class': '4COM1',
       'facbookLink': 'https://www.facebook.com/thipthidar.korsarnonh/',
       'image':
@@ -29,7 +29,7 @@ class profilePage extends StatelessWidget {
     },
     {
       'name': 'ທ້າວ ໄພລັດ ລັດດາວັນ',
-      'role': 'Design&Coding',
+      'role': 'ເຮັດເອກະສານ',
       'class': '4COM1',
       'facbookLink': 'https://www.facebook.com/thipthidar.korsarnonh/',
       'image':
@@ -37,7 +37,7 @@ class profilePage extends StatelessWidget {
     },
     {
       'name': 'ທ້າວ ນິກທະວົງ',
-      'role': 'Design&Coding',
+      'role': 'ຂຽນຄອນເທັນ',
       'class': '4COM1',
       'facbookLink': 'https://www.facebook.com/thipthidar.korsarnonh/',
       'image':

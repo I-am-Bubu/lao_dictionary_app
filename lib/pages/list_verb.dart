@@ -71,7 +71,7 @@ class listOfFristVerb extends StatelessWidget {
                           child: Padding(
                             padding: const EdgeInsets.only(left: 15),
                             child: Text(
-                              subItemList[index].subtitle,
+                              subItemList[index].title,
                               style: TextStyle(
                                   fontSize: 30,
                                   color: const Color.fromARGB(255, 83, 83, 83),
@@ -80,7 +80,7 @@ class listOfFristVerb extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(20, 5, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(8, 5, 0, 0),
                           child: Text(
                             subItemList[index].subtitle,
                             style: TextStyle(

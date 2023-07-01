@@ -11,5 +11,5 @@ class ListOfVerb {
   final String details;
 
   ListOfVerb(
-      {required this.subtitle, required this.details, required this.title});
+      { required this.title, required this.subtitle, required this.details,});
 }
