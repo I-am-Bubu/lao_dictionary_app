@@ -81,7 +81,7 @@ class _startPageState extends State<startPage> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => mainPage()),
+                      MaterialPageRoute(builder: (context) => bottomNav()),
                     );
                   },
                 ),

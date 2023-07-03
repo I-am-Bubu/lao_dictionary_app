@@ -5,14 +5,14 @@ import 'package:lao_dictionary_app/pages/profile_page.dart';
 import 'package:lao_dictionary_app/pages/second_verbs_page.dart';
 import 'package:lao_dictionary_app/pages/third_verb_page.dart';
 
-class mainPage extends StatefulWidget {
-  const mainPage({super.key});
+class bottomNav extends StatefulWidget {
+  const bottomNav({super.key});
 
   @override
-  State<mainPage> createState() => _mainPageState();
+  State<bottomNav> createState() => _bottomNavState();
 }
 
-class _mainPageState extends State<mainPage> {
+class _bottomNavState extends State<bottomNav> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
