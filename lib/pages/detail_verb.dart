@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lao_dictionary_app/verbs.dart';
+import 'package:lao_dictionary_app/model/verbs.dart';
 
 class detailOfFirstVerb extends StatelessWidget {
   final ListOfVerb subItem;

@@ -1,4 +1,4 @@
-import 'package:lao_dictionary_app/verbs.dart';
+import 'package:lao_dictionary_app/model/verbs.dart';
 
 final List<Verbs> itemListFirstVerbs = [
   Verbs(

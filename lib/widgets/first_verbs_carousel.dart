@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:lao_dictionary_app/first_verb.dart';
+import 'package:lao_dictionary_app/data/first_verb.dart';
 import '../../pages/list_verb.dart';
 
-class thirdVerbsCarousel extends StatelessWidget {
+class firstVerbsCarousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lao_dictionary_app/data/first_verb.dart';
 import 'package:lao_dictionary_app/pages/list_verb.dart';
-import '../first_verb.dart';
 
 class firstVerbsPage extends StatelessWidget {
   @override

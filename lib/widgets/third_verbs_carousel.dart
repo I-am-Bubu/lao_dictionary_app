@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:lao_dictionary_app/first_verb.dart';
+import 'package:lao_dictionary_app/data/first_verb.dart';
 import '../../pages/list_verb.dart';
 
-class secondVerbsCarousel extends StatelessWidget {
+class thirdVerbsCarousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,8 +20,8 @@ class secondVerbsCarousel extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => listOfFristVerb(
-                            subItemList: item.subItems),
+                        builder: (context) =>
+                            listOfFristVerb(subItemList: item.subItems),
                       ),
                     );
                   },

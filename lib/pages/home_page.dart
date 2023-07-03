@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:lao_dictionary_app/pages/first_verbs_page.dart';
 import 'package:lao_dictionary_app/pages/second_verbs_page.dart';
 import 'package:lao_dictionary_app/pages/third_verb_page.dart';
-import 'package:lao_dictionary_app/widgets/carousel/carousel_widget.dart';
-import 'package:lao_dictionary_app/widgets/carousel/first_verbs_carousel.dart';
-import 'package:lao_dictionary_app/widgets/carousel/second_verbs_carousel.dart';
-import 'package:lao_dictionary_app/widgets/carousel/third_verbs_carousel.dart';
+import 'package:lao_dictionary_app/widgets/carousel_widget.dart';
+import 'package:lao_dictionary_app/widgets/first_verbs_carousel.dart';
+import 'package:lao_dictionary_app/widgets/second_verbs_carousel.dart';
+import 'package:lao_dictionary_app/widgets/third_verbs_carousel.dart';
 
 class homePage extends StatefulWidget {
   @override
