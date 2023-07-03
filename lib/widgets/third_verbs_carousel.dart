@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lao_dictionary_app/data/first_verb.dart';
+import 'package:lao_dictionary_app/data/third_verb.dart';
 import '../../pages/list_verb.dart';
 
 class thirdVerbsCarousel extends StatelessWidget {
@@ -9,9 +9,9 @@ class thirdVerbsCarousel extends StatelessWidget {
       height: 110,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: itemListFirstVerbs.length,
+        itemCount: itemListThirdVerbs.length,
         itemBuilder: (context, index) {
-          final item = itemListFirstVerbs[index];
+          final item = itemListThirdVerbs[index];
           return Column(
             children: [
               Row(children: [

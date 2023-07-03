@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lao_dictionary_app/data/first_verb.dart';
+import 'package:lao_dictionary_app/data/second_verb.dart';
 import '../../pages/list_verb.dart';
 
 class secondVerbsCarousel extends StatelessWidget {
@@ -9,9 +9,9 @@ class secondVerbsCarousel extends StatelessWidget {
       height: 110,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: itemListFirstVerbs.length,
+        itemCount: itemListSecondVerbs.length,
         itemBuilder: (context, index) {
-          final item = itemListFirstVerbs[index];
+          final item = itemListSecondVerbs[index];
           return Column(
             children: [
               Row(children: [

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lao_dictionary_app/data/first_verb.dart';
+import 'package:lao_dictionary_app/data/third_verb.dart';
 import 'package:lao_dictionary_app/pages/list_verb.dart';
 
 class thirdVerbsPage extends StatelessWidget {
@@ -20,9 +20,9 @@ class thirdVerbsPage extends StatelessWidget {
         childAspectRatio: 1,
         padding: EdgeInsets.only(top: 5),
         children: List.generate(
-          itemListFirstVerbs.length,
+          itemListThirdVerbs.length,
           (index) {
-            final item = itemListFirstVerbs[index];
+            final item = itemListThirdVerbs[index];
             return GestureDetector(
               onTap: () {
                 Navigator.push(
