@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:lao_dictionary_app/pages/main_page.dart';
+import 'package:lao_dictionary_app/widgets/bottom_nav_.dart';
 
 class startPage extends StatefulWidget {
   const startPage({super.key});
